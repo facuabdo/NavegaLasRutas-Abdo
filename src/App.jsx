@@ -1,17 +1,14 @@
 import "./App.css";
 
-import logo from "./assets/facommerce-logo.png";
+import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
+import { NavBar } from "./components/NavBar/NavBar";
 
 function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={logo} className="logo" alt="Vite logo" />
-        </a>
-      </div>
-      <h1>Facommerce</h1>
-    </>
+    <div className="container">
+      <NavBar />
+      <ItemListContainer title="aca irian los items" />
+    </div>
   );
 }
 
