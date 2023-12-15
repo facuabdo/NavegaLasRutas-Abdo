@@ -1,18 +1,18 @@
 export const categorias = [
   {
-    id: 1,
+    codigo: "guitarra",
     nombre: "Guitarras",
   },
   {
-    id: 2,
+    codigo: "amplificadores",
     nombre: "Amplificadores",
   },
   {
-    id: 3,
+    codigo: "efectos",
     nombre: "Efectos",
   },
   {
-    id: 4,
+    codigo: "teclados",
     nombre: "Teclados",
   },
 ];
@@ -21,7 +21,7 @@ export const productos = [
   // Producto existente
   {
     id: 1,
-    categoria: 1,
+    categoria: "guitarra",
     nombre: "Fender Stratocaster",
     precio: "1600",
     descripcion:
@@ -32,7 +32,7 @@ export const productos = [
   // Nuevos productos
   {
     id: 2,
-    categoria: 2, // Amplificadores
+    categoria: "amplificadores", // Amplificadores
     nombre: "Marshall JCM800",
     precio: "1200",
     descripcion: "Amplificador Marshall JCM800 100W. Sonido clásico de rock.",
@@ -41,7 +41,7 @@ export const productos = [
   },
   {
     id: 3,
-    categoria: 3, // Efectos
+    categoria: "efectos", // Efectos
     nombre: "Boss DD-7",
     precio: "150",
     descripcion:
@@ -51,7 +51,7 @@ export const productos = [
   },
   {
     id: 4,
-    categoria: 4, // Teclados
+    categoria: "teclados", // Teclados
     nombre: "Yamaha P-45",
     precio: "500",
     descripcion:
@@ -61,7 +61,7 @@ export const productos = [
   },
   {
     id: 5,
-    categoria: 1, // Guitarras
+    categoria: "guitarra", // Guitarras
     nombre: "Gibson Les Paul",
     precio: "2500",
     descripcion:

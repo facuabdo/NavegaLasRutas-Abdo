@@ -11,10 +11,8 @@ function App() {
       <div className="container">
         <NavBar />
         <Routes>
-          <Route
-            path="/"
-            element={<ItemListContainer title="aca irian los items" />}
-          />
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
           <Route path="*" element={<h1>404</h1>} />
         </Routes>
       </div>

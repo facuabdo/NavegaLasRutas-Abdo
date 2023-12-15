@@ -1,19 +1,26 @@
 /* eslint-disable react/prop-types */
 
+import { getPorCategoria, getProductos } from "../../data/dataMock";
 import { useEffect, useState } from "react";
 
-import { getProductos } from "../../data/dataMock";
+import { useParams } from "react-router-dom";
 
-export const ItemListContainer = ({ title }) => {
+export const ItemListContainer = () => {
   const [productos, setProductos] = useState(null);
+  const { idCategoria } = useParams();
 
   useEffect(() => {
-    getProductos().then((productosList) => setProductos(productosList));
-  }, []);
+    console.log(idCategoria);
+
+    const productosPromise = idCategoria
+      ? getPorCategoria(idCategoria)
+      : getProductos();
+
+    productosPromise.then((productosList) => setProductos(productosList));
+  }, [idCategoria]);
 
   return (
     <div className="item-list-container">
-      {title}
       <hr />
 
       {productos
