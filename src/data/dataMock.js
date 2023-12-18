@@ -32,7 +32,7 @@ export const productos = [
   // Nuevos productos
   {
     id: 2,
-    categoria: "amplificadores", // Amplificadores
+    categoria: "amplificadores",
     nombre: "Marshall JCM800",
     precio: "1200",
     descripcion: "Amplificador Marshall JCM800 100W. Sonido clásico de rock.",
@@ -41,7 +41,7 @@ export const productos = [
   },
   {
     id: 3,
-    categoria: "efectos", // Efectos
+    categoria: "efectos",
     nombre: "Boss DD-7",
     precio: "150",
     descripcion:
@@ -51,7 +51,7 @@ export const productos = [
   },
   {
     id: 4,
-    categoria: "teclados", // Teclados
+    categoria: "teclados",
     nombre: "Yamaha P-45",
     precio: "500",
     descripcion:
@@ -61,7 +61,7 @@ export const productos = [
   },
   {
     id: 5,
-    categoria: "guitarra", // Guitarras
+    categoria: "guitarra",
     nombre: "Gibson Les Paul",
     precio: "2500",
     descripcion:
