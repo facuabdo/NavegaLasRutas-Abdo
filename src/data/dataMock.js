@@ -18,7 +18,6 @@ export const categorias = [
 ];
 
 export const productos = [
-  // Producto existente
   {
     id: 1,
     categoria: "guitarra",
@@ -29,7 +28,6 @@ export const productos = [
     stock: 1,
     foto: "fender.jpg",
   },
-  // Nuevos productos
   {
     id: 2,
     categoria: "amplificadores",
@@ -67,7 +65,7 @@ export const productos = [
     descripcion:
       "Guitarra Gibson Les Paul Standard. Tono y sustain legendarios.",
     stock: 1,
-    foto: "gibson.jpg",
+    foto: "gibson.png",
   },
 ];
 

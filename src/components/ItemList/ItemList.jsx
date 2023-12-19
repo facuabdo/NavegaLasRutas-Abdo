@@ -4,7 +4,7 @@ import { Item } from "../Item/Item";
 
 export const ItemList = ({ productos }) => {
   return (
-    <Flex>
+    <Flex justifyContent={"space-between"}>
       {productos.map((producto) => (
         <Item key={producto.id} producto={producto} />
       ))}
