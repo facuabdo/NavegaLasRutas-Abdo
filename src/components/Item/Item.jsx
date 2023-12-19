@@ -36,7 +36,7 @@ export const Item = ({ producto }) => {
       <Divider />
       <CardFooter>
         <ButtonGroup spacing="2">
-          <Button variant="solid" colorScheme="teal">
+          <Button variant="solid" backgroundColor="#2f82cd" textColor="#fff"> 
             <Link to={`/product/${producto.id}`}>Ver detalle</Link>
           </Button>
         </ButtonGroup>
