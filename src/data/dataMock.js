@@ -73,7 +73,7 @@ export const getCategorias = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(categorias);
-    }, 2000);
+    }, 500);
   });
 };
 
@@ -81,7 +81,7 @@ export const getProductos = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(productos);
-    }, 2000);
+    }, 500);
   });
 };
 
@@ -91,6 +91,14 @@ export const getPorCategoria = (idCategoria) => {
       resolve(
         productos.filter((producto) => producto.categoria === idCategoria)
       );
-    }, 2000);
+    }, 500);
+  });
+};
+
+export const getProductoPorId = (idProducto) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(productos.find((producto) => producto.id == idProducto));
+    }, 500);
   });
 };
